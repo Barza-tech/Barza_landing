@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
 
   const languages = [
-    { code: 'pt' as const, name: t('portuguese'), flag: '🇦🇴' },
+    { code: 'pt' as const, name: t('portuguese'), flag: '🇵🇹' },
     { code: 'en' as const, name: t('english'), flag: '🇺🇸' },
     { code: 'fr' as const, name: t('french'), flag: '🇫🇷' },
   ];
@@ -32,9 +32,6 @@ const Header: React.FC = () => {
             </a>
             <a href="#download" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t('download')}
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              {t('about')}
             </a>
             
             {/* Language Selector */}
@@ -87,9 +84,6 @@ const Header: React.FC = () => {
               </a>
               <a href="#download" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                 {t('download')}
-              </a>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                {t('about')}
               </a>
               
               {/* Mobile Language Selector */}

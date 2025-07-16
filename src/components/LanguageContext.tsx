@@ -17,14 +17,14 @@ const translations = {
     
     // Hero Section
     heroTitle: 'Encontre o Barbeiro Perfeito',
-    heroSubtitle: 'Conectando a cultura africana de barbearia ao mundo',
-    heroDescription: 'Descubra barbeiros móveis talentosos na sua área em Angola e além. Experiência profissional, tradições autênticas, conveniência moderna.',
+    heroSubtitle: 'Conectando culturas de barbearia',
+    heroDescription: 'Descubra barbeiros móveis talentosos na sua área. Experiência profissional, conveniência moderna.',
     getStarted: 'Começar Agora',
     watchDemo: 'Ver Demonstração',
     
     // Features
     featuresTitle: 'Porque Escolher Barza?',
-    featuresSubtitle: 'Conectamos você aos melhores barbeiros da África',
+    featuresSubtitle: 'Conectamos você aos melhores barbeiros',
     
     feature1Title: 'Barbeiros Móveis',
     feature1Description: 'Profissionais qualificados vêm até você, onde quer que esteja',
@@ -32,8 +32,8 @@ const translations = {
     feature2Title: 'Notificações Inteligentes',
     feature2Description: 'Receba alertas sobre disponibilidade e promoções especiais',
     
-    feature3Title: 'Cultura Autêntica',
-    feature3Description: 'Experimente tradições africanas de barbearia com toque moderno',
+    feature3Title: 'Serviço Premium',
+    feature3Description: 'Experimente qualidade profissional com toque moderno',
     
     feature4Title: 'Reserva Fácil',
     feature4Description: 'Agende seu corte em poucos toques, pagamento seguro',
@@ -45,7 +45,7 @@ const translations = {
     
     // Footer
     madeWith: 'Feito com',
-    inAfrica: 'em África',
+    inAfrica: 'com Paixão',
     forTheWorld: 'para o Mundo',
     
     // Languages
@@ -62,14 +62,14 @@ const translations = {
     
     // Hero Section
     heroTitle: 'Find Your Perfect Barber',
-    heroSubtitle: 'Connecting African barbering culture to the world',
-    heroDescription: 'Discover talented mobile barbers in your area across Angola and beyond. Professional expertise, authentic traditions, modern convenience.',
+    heroSubtitle: 'Connecting barbering cultures',
+    heroDescription: 'Discover talented mobile barbers in your area. Professional expertise, modern convenience.',
     getStarted: 'Get Started',
     watchDemo: 'Watch Demo',
     
     // Features
     featuresTitle: 'Why Choose Barza?',
-    featuresSubtitle: 'We connect you to Africa\'s finest barbers',
+    featuresSubtitle: 'We connect you to the finest barbers',
     
     feature1Title: 'Mobile Barbers',
     feature1Description: 'Skilled professionals come to you, wherever you are',
@@ -77,8 +77,8 @@ const translations = {
     feature2Title: 'Smart Notifications',
     feature2Description: 'Get alerts about availability and special promotions',
     
-    feature3Title: 'Authentic Culture',
-    feature3Description: 'Experience African barbering traditions with a modern twist',
+    feature3Title: 'Premium Service',
+    feature3Description: 'Experience professional quality with a modern twist',
     
     feature4Title: 'Easy Booking',
     feature4Description: 'Schedule your cut in a few taps, secure payment',
@@ -90,7 +90,7 @@ const translations = {
     
     // Footer
     madeWith: 'Made with',
-    inAfrica: 'in Africa',
+    inAfrica: 'Passion',
     forTheWorld: 'for the World',
     
     // Languages
@@ -107,14 +107,14 @@ const translations = {
     
     // Hero Section
     heroTitle: 'Trouvez Votre Barbier Parfait',
-    heroSubtitle: 'Connecter la culture africaine de barbier au monde',
-    heroDescription: 'Découvrez des barbiers mobiles talentueux dans votre région en Angola et au-delà. Expertise professionnelle, traditions authentiques, commodité moderne.',
+    heroSubtitle: 'Connecter les cultures de barbier',
+    heroDescription: 'Découvrez des barbiers mobiles talentueux dans votre région. Expertise professionnelle, commodité moderne.',
     getStarted: 'Commencer',
     watchDemo: 'Voir la Démo',
     
     // Features
     featuresTitle: 'Pourquoi Choisir Barza?',
-    featuresSubtitle: 'Nous vous connectons aux meilleurs barbiers d\'Afrique',
+    featuresSubtitle: 'Nous vous connectons aux meilleurs barbiers',
     
     feature1Title: 'Barbiers Mobiles',
     feature1Description: 'Des professionnels qualifiés viennent à vous, où que vous soyez',
@@ -122,8 +122,8 @@ const translations = {
     feature2Title: 'Notifications Intelligentes',
     feature2Description: 'Recevez des alertes sur la disponibilité et les promotions spéciales',
     
-    feature3Title: 'Culture Authentique',
-    feature3Description: 'Découvrez les traditions africaines de barbier avec une touche moderne',
+    feature3Title: 'Service Premium',
+    feature3Description: 'Découvrez la qualité professionnelle avec une touche moderne',
     
     feature4Title: 'Réservation Facile',
     feature4Description: 'Planifiez votre coupe en quelques clics, paiement sécurisé',
@@ -135,7 +135,7 @@ const translations = {
     
     // Footer
     madeWith: 'Fait avec',
-    inAfrica: 'en Afrique',
+    inAfrica: 'Passion',
     forTheWorld: 'pour le Monde',
     
     // Languages

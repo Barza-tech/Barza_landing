@@ -33,9 +33,6 @@ const Footer: React.FC = () => {
             <a href="#download" className="hover:text-white transition-colors">
               {t('download')}
             </a>
-            <a href="#about" className="hover:text-white transition-colors">
-              {t('about')}
-            </a>
             <a href="#privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
@@ -47,7 +44,7 @@ const Footer: React.FC = () => {
           {/* Copyright */}
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-400">
-              © 2025 Barza. All rights reserved. | Connecting African excellence worldwide.
+              © 2025 Barza. All rights reserved. | Connecting excellence worldwide.
             </p>
           </div>
         </div>

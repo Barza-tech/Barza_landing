@@ -5,18 +5,18 @@ import { useLanguage } from './LanguageContext';
 const Hero: React.FC = () => {
   const { t } = useLanguage();
 
-  // Sample barber locations across Africa
+  // Sample barber locations across different regions
   const barberLocations = [
-    { id: 1, city: 'Luanda', country: 'Angola', x: '52%', y: '68%', active: true },
-    { id: 2, city: 'Lagos', country: 'Nigeria', x: '48%', y: '45%', active: true },
-    { id: 3, city: 'Cairo', country: 'Egypt', x: '55%', y: '25%', active: false },
-    { id: 4, city: 'Cape Town', country: 'South Africa', x: '54%', y: '85%', active: true },
-    { id: 5, city: 'Nairobi', country: 'Kenya', x: '62%', y: '52%', active: true },
-    { id: 6, city: 'Accra', country: 'Ghana', x: '46%', y: '42%', active: false },
-    { id: 7, city: 'Kinshasa', country: 'DRC', x: '52%', y: '58%', active: true },
-    { id: 8, city: 'Addis Ababa', country: 'Ethiopia', x: '63%', y: '45%', active: false },
-    { id: 9, city: 'Casablanca', country: 'Morocco', x: '46%', y: '22%', active: true },
-    { id: 10, city: 'Dakar', country: 'Senegal', x: '40%', y: '38%', active: true },
+    { id: 1, city: 'Downtown', country: 'Metro', x: '52%', y: '68%', active: true },
+    { id: 2, city: 'Westside', country: 'City', x: '48%', y: '45%', active: true },
+    { id: 3, city: 'Northend', country: 'District', x: '55%', y: '25%', active: false },
+    { id: 4, city: 'Southbank', country: 'Area', x: '54%', y: '85%', active: true },
+    { id: 5, city: 'Eastside', country: 'Zone', x: '62%', y: '52%', active: true },
+    { id: 6, city: 'Central', country: 'Hub', x: '46%', y: '42%', active: false },
+    { id: 7, city: 'Riverside', country: 'Quarter', x: '52%', y: '58%', active: true },
+    { id: 8, city: 'Uptown', country: 'Sector', x: '63%', y: '45%', active: false },
+    { id: 9, city: 'Midtown', country: 'Plaza', x: '46%', y: '22%', active: true },
+    { id: 10, city: 'Oldtown', country: 'Village', x: '40%', y: '38%', active: true },
   ];
 
   return (
@@ -28,17 +28,17 @@ const Hero: React.FC = () => {
           className="w-full h-full object-cover"
           style={{ filter: 'blur(0.5px)' }}
         >
-          {/* Simplified Africa continent outline */}
+          {/* Simplified world map outline */}
           <path
-            d="M380 80 C420 85, 460 95, 480 120 C500 140, 520 160, 530 180 C540 200, 545 220, 550 240 C555 260, 560 280, 565 300 C570 320, 575 340, 580 360 C585 380, 590 400, 595 420 C600 440, 605 460, 600 480 C595 500, 585 515, 570 525 C555 535, 535 540, 515 545 C495 550, 475 555, 455 560 C435 565, 415 570, 395 575 C375 580, 355 585, 335 580 C315 575, 295 565, 280 550 C265 535, 255 515, 250 495 C245 475, 245 455, 250 435 C255 415, 265 395, 275 375 C285 355, 295 335, 305 315 C315 295, 325 275, 335 255 C345 235, 355 215, 365 195 C375 175, 385 155, 395 135 C405 115, 415 95, 425 85 C435 75, 445 75, 455 80 C465 85, 475 95, 480 105 C485 115, 485 125, 480 135 C475 145, 465 155, 455 165 C445 175, 435 185, 425 195 C415 205, 405 215, 395 225 C385 235, 375 245, 365 255 C355 265, 345 275, 340 285 C335 295, 335 305, 340 315 C345 325, 355 335, 365 345 C375 355, 385 365, 395 375 C405 385, 415 395, 425 405 C435 415, 445 425, 455 435 C465 445, 475 455, 485 465 C495 475, 505 485, 515 495 C525 505, 535 515, 540 525 C545 535, 545 545, 540 555 C535 565, 525 575, 515 580 C505 585, 495 585, 485 580 C475 575, 465 565, 455 555 C445 545, 435 535, 425 525 C415 515, 405 505, 395 495 C385 485, 375 475, 365 465 C355 455, 345 445, 335 435 C325 425, 315 415, 305 405 C295 395, 285 385, 275 375 C265 365, 255 355, 250 345 C245 335, 245 325, 250 315 C255 305, 265 295, 275 285 C285 275, 295 265, 305 255 C315 245, 325 235, 335 225 C345 215, 355 205, 365 195 C375 185, 385 175, 395 165 C405 155, 415 145, 420 135 C425 125, 425 115, 420 105 C415 95, 405 85, 395 80 C385 75, 375 75, 365 80 C355 85, 345 95, 340 105 C335 115, 335 125, 340 135 C345 145, 355 155, 365 165 C375 175, 385 185, 395 195 C405 205, 415 215, 425 225 C435 235, 445 245, 455 255 C465 265, 475 275, 480 285 C485 295, 485 305, 480 315 C475 325, 465 335, 455 345 C445 355, 435 365, 425 375 C415 385, 405 395, 395 405 C385 415, 375 425, 365 435 C355 445, 345 455, 335 465 C325 475, 315 485, 310 495 C305 505, 305 515, 310 525 C315 535, 325 545, 335 550 C345 555, 355 555, 365 550 C375 545, 385 535, 395 525 C405 515, 415 505, 425 495 C435 485, 445 475, 455 465 C465 455, 475 445, 485 435 C495 425, 505 415, 515 405 C525 395, 535 385, 540 375 C545 365, 545 355, 540 345 C535 335, 525 325, 515 315 C505 305, 495 295, 485 285 C475 275, 465 265, 455 255 C445 245, 435 235, 425 225 C415 215, 405 205, 395 195 C385 185, 375 175, 365 165 C355 155, 345 145, 340 135 C335 125, 335 115, 340 105 C345 95, 355 85, 365 80 C375 75, 385 75, 395 80 Z"
-            fill="url(#africaGradient)"
+            d="M100 150 C150 140, 200 145, 250 160 C300 175, 350 190, 400 180 C450 170, 500 160, 550 170 C600 180, 650 190, 700 185 C750 180, 780 175, 780 200 C780 225, 750 250, 700 270 C650 290, 600 300, 550 295 C500 290, 450 285, 400 290 C350 295, 300 300, 250 295 C200 290, 150 285, 100 280 C50 275, 20 270, 20 245 C20 220, 50 195, 100 180 Z M200 300 C250 295, 300 300, 350 310 C400 320, 450 330, 500 325 C550 320, 600 315, 650 320 C700 325, 720 330, 720 350 C720 370, 700 390, 650 400 C600 410, 550 415, 500 410 C450 405, 400 400, 350 405 C300 410, 250 415, 200 410 C150 405, 120 400, 120 380 C120 360, 150 340, 200 330 Z"
+            fill="url(#worldGradient)"
             stroke="rgba(59, 130, 246, 0.3)"
             strokeWidth="2"
           />
           
           {/* Gradient definition */}
           <defs>
-            <linearGradient id="africaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient id="worldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="rgba(59, 130, 246, 0.1)" />
               <stop offset="50%" stopColor="rgba(249, 115, 22, 0.1)" />
               <stop offset="100%" stopColor="rgba(34, 197, 94, 0.1)" />
@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
                         </div>
                         <h2 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">Barza</h2>
                         <p className="text-blue-100 mb-4 sm:mb-6 lg:mb-8 text-xs sm:text-xs lg:text-sm px-1 sm:px-2 leading-tight">
-                          Encontre o barbeiro perfeito perto de si em Luanda, Angola
+                          Encontre o barbeiro perfeito perto de si
                         </p>
                         
                         <div className="space-y-1.5 sm:space-y-2 lg:space-y-3 mb-4 sm:mb-6 lg:mb-8">
@@ -176,7 +176,7 @@ const Hero: React.FC = () => {
                         </div>
                         <h2 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">Barza</h2>
                         <p className="text-orange-100 mb-4 sm:mb-6 lg:mb-8 text-xs sm:text-xs lg:text-sm px-1 sm:px-2 leading-tight">
-                          Find your perfect barber in Luanda, Angola
+                          Find your perfect barber nearby
                         </p>
                         
                         <div className="space-y-1.5 sm:space-y-2 lg:space-y-3 mb-4 sm:mb-6 lg:mb-8">
@@ -191,7 +191,7 @@ const Hero: React.FC = () => {
                             <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 bg-blue-500 rounded sm:rounded-md lg:rounded-lg mr-1.5 sm:mr-2 lg:mr-3 flex items-center justify-center text-xs">
                               ⭐
                             </div>
-                            <span className="text-orange-100 text-xs sm:text-xs lg:text-sm">African traditions</span>
+                            <span className="text-orange-100 text-xs sm:text-xs lg:text-sm">Quality service</span>
                           </div>
                         </div>
                         
