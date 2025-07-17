@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { useEffect } from 'react';
 
 type Language = 'pt' | 'en' | 'fr';
 
@@ -147,8 +148,45 @@ const translations = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+// Function to detect browser language and return supported language
+const detectBrowserLanguage = (): Language => {
+  // Get browser language (primary language)
+  const browserLang = navigator.language.toLowerCase();
+  
+  // Check for Portuguese (pt or pt-pt)
+  if (browserLang === 'pt' || browserLang === 'pt-pt') {
+    return 'pt';
+  }
+  
+  // Check for French (fr or fr-fr)
+  if (browserLang === 'fr' || browserLang === 'fr-fr') {
+    return 'fr';
+  }
+  
+  // Check for English (en, en-us, en-gb)
+  if (browserLang === 'en' || browserLang === 'en-us' || browserLang === 'en-gb') {
+    return 'en';
+  }
+  
+  // Default to English for any other language
+  return 'en';
+};
+
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pt');
+  const [language, setLanguage] = useState<Language>(() => {
+    // Try to get saved language from localStorage first
+    const savedLanguage = localStorage.getItem('barza-language') as Language;
+    if (savedLanguage && ['pt', 'en', 'fr'].includes(savedLanguage)) {
+      return savedLanguage;
+    }
+    // If no saved language, detect from browser
+    return detectBrowserLanguage();
+  });
+  
+  // Save language preference to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('barza-language', language);
+  }, [language]);
   
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations['pt']] || key;
