@@ -52,7 +52,30 @@ const translations = {
     // Languages
     portuguese: 'Português',
     english: 'English',
-    french: 'Français'
+    french: 'Français',
+    
+    // Form
+    formTitle: 'Junte-se à Revolução Barza',
+    formSubtitle: 'Registo de Barbeiro',
+    formPromoLabel: 'Oferta de Lançamento',
+    formPromoMessage: 'Barbeiros inscritos antes do lançamento receberão clientes gratuitamente durante 2 meses!',
+    
+    formNameLabel: 'Nome Completo',
+    formNamePlaceholder: 'Digite o seu nome completo',
+    formEmailLabel: 'Email',
+    formEmailPlaceholder: 'exemplo@email.com',
+    formPhoneLabel: 'Telefone',
+    formPhonePlaceholder: '+351 912 345 678',
+    formBarbershopLabel: 'Nome da Barbearia',
+    formBarbershopPlaceholder: 'Nome da sua barbearia',
+    
+    formSubmitButton: 'Enviar',
+    formSubmitting: 'Enviando...',
+    formPrivacyNote: 'Os seus dados serão tratados com confidencialidade e utilizados apenas para contacto.',
+    
+    formSuccessTitle: 'Inscrição Enviada!',
+    formSuccessMessage: 'Obrigado por se juntar à Barza. Entraremos em contacto em breve.',
+    formSuccessDetails: 'Verifique o seu email para mais informações sobre os próximos passos.'
   },
   
   en: {
@@ -97,7 +120,30 @@ const translations = {
     // Languages
     portuguese: 'Português',
     english: 'English',
-    french: 'Français'
+    french: 'Français',
+    
+    // Form
+    formTitle: 'Join the Barza Revolution',
+    formSubtitle: 'Barber Registration',
+    formPromoLabel: 'Launch Offer',
+    formPromoMessage: 'Barbers registered before launch will receive clients for free for 2 months!',
+    
+    formNameLabel: 'Full Name',
+    formNamePlaceholder: 'Enter your full name',
+    formEmailLabel: 'Email',
+    formEmailPlaceholder: 'example@email.com',
+    formPhoneLabel: 'Phone',
+    formPhonePlaceholder: '+1 (555) 123-4567',
+    formBarbershopLabel: 'Barbershop Name',
+    formBarbershopPlaceholder: 'Your barbershop name',
+    
+    formSubmitButton: 'Submit',
+    formSubmitting: 'Submitting...',
+    formPrivacyNote: 'Your data will be treated confidentially and used only for contact purposes.',
+    
+    formSuccessTitle: 'Registration Sent!',
+    formSuccessMessage: 'Thank you for joining Barza. We will contact you soon.',
+    formSuccessDetails: 'Check your email for more information about the next steps.'
   },
   
   fr: {
@@ -142,7 +188,30 @@ const translations = {
     // Languages
     portuguese: 'Português',
     english: 'English',
-    french: 'Français'
+    french: 'Français',
+    
+    // Form
+    formTitle: 'Rejoignez la Révolution Barza',
+    formSubtitle: 'Inscription Barbier',
+    formPromoLabel: 'Offre de Lancement',
+    formPromoMessage: 'Les barbiers inscrits avant le lancement recevront des clients gratuitement pendant 2 mois!',
+    
+    formNameLabel: 'Nom Complet',
+    formNamePlaceholder: 'Entrez votre nom complet',
+    formEmailLabel: 'Email',
+    formEmailPlaceholder: 'exemple@email.com',
+    formPhoneLabel: 'Téléphone',
+    formPhonePlaceholder: '+33 1 23 45 67 89',
+    formBarbershopLabel: 'Nom du Salon',
+    formBarbershopPlaceholder: 'Le nom de votre salon',
+    
+    formSubmitButton: 'Envoyer',
+    formSubmitting: 'Envoi...',
+    formPrivacyNote: 'Vos données seront traitées confidentiellement et utilisées uniquement à des fins de contact.',
+    
+    formSuccessTitle: 'Inscription Envoyée!',
+    formSuccessMessage: 'Merci de rejoindre Barza. Nous vous contactons bientôt.',
+    formSuccessDetails: 'Vérifiez votre email pour plus d\'informations sur les prochaines étapes.'
   }
 };
 
