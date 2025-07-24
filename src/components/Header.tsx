@@ -33,7 +33,17 @@ const Header: React.FC = () => {
             <a href="#download" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t('download')}
             </a>
-            
+
+            {/* Login Button */}
+            <a
+              href="https://app.barrza.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium px-4 py-2 rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors"
+            >
+              {t('login') || 'Sign In'}
+            </a>
+
             {/* Language Selector */}
             <div className="relative">
               <button
@@ -45,7 +55,7 @@ const Header: React.FC = () => {
                   {languages.find(lang => lang.code === language)?.flag}
                 </span>
               </button>
-              
+
               {isLanguageOpen && (
                 <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 min-w-[140px]">
                   {languages.map((lang) => (
@@ -85,7 +95,17 @@ const Header: React.FC = () => {
               <a href="#download" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                 {t('download')}
               </a>
-              
+
+              {/* Login Mobile */}
+              <a
+                href="https://app.barrza.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium px-4 py-2 rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                {t('login') || 'Sign In'}
+              </a>
+
               {/* Mobile Language Selector */}
               <div className="pt-3 border-t border-gray-200">
                 <div className="flex flex-wrap gap-2">
@@ -97,8 +117,8 @@ const Header: React.FC = () => {
                         setIsMenuOpen(false);
                       }}
                       className={`px-3 py-1 rounded-full text-sm flex items-center space-x-1 transition-colors ${
-                        language === lang.code 
-                          ? 'bg-blue-100 text-blue-800' 
+                        language === lang.code
+                          ? 'bg-blue-100 text-blue-800'
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
