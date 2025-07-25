@@ -58,14 +58,14 @@ const translations = {
     formTitle: 'Junte-se à Revolução Barza',
     formSubtitle: 'Registo de Barbeiro',
     formPromoLabel: 'Oferta de Lançamento',
-    formPromoMessage: 'Barbeiros inscritos antes do lançamento receberão clientes gratuitamente durante 2 meses!',
+    formPromoMessage: 'Vagas limitadas! Garante já 1 meses de clientes grátis antes do lançamento!',
     
     formNameLabel: 'Nome Completo',
     formNamePlaceholder: 'Digite o seu nome completo',
     formEmailLabel: 'Email',
     formEmailPlaceholder: 'exemplo@email.com',
     formPhoneLabel: 'Telefone',
-    formPhonePlaceholder: '+351 912 345 678',
+    formPhonePlaceholder: '+224 920 000 000',
     formBarbershopLabel: 'Nome da Barbearia',
     formBarbershopPlaceholder: 'Nome da sua barbearia',
     
@@ -126,7 +126,7 @@ const translations = {
     formTitle: 'Join the Barza Revolution',
     formSubtitle: 'Barber Registration',
     formPromoLabel: 'Launch Offer',
-    formPromoMessage: 'Barbers registered before launch will receive clients for free for 2 months!',
+    formPromoMessage: 'Limited spots! Get 1 months of free clients before the launch!',
     
     formNameLabel: 'Full Name',
     formNamePlaceholder: 'Enter your full name',
@@ -194,7 +194,7 @@ const translations = {
     formTitle: 'Rejoignez la Révolution Barza',
     formSubtitle: 'Inscription Barbier',
     formPromoLabel: 'Offre de Lancement',
-    formPromoMessage: 'Les barbiers inscrits avant le lancement recevront des clients gratuitement pendant 2 mois!',
+    formPromoMessage: 'Places limitées ! Profitez de 1 mois de clients gratuits avant le lancement !',
     
     formNameLabel: 'Nom Complet',
     formNamePlaceholder: 'Entrez votre nom complet',

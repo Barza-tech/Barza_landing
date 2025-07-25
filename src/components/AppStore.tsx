@@ -21,8 +21,9 @@ const AppStore: React.FC = () => {
             </p>
           </div>
           
-          {/* Stats */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {/* Stats
+          
+           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-600 mb-2">50K+</div>
               <div className="text-gray-600">Downloads</div>
@@ -43,6 +44,8 @@ const AppStore: React.FC = () => {
               <div className="text-gray-600">Countries</div>
             </div>
           </div>
+          */}
+         
           
           {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

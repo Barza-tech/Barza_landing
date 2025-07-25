@@ -35,7 +35,9 @@ const Header: React.FC = () => {
             </a>
 
             {/* Login Button */}
-            <a
+           {/*
+           
+           <a
               href="https://app.barrza.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,6 +45,8 @@ const Header: React.FC = () => {
             >
               {t('login') || 'Sign In'}
             </a>
+           
+           */} 
 
             {/* Language Selector */}
             <div className="relative">
