@@ -58,7 +58,7 @@ const translations = {
     formTitle: 'Junte-se à Revolução Barza',
     formSubtitle: 'Registo de Barbeiro',
     formPromoLabel: 'Oferta de Lançamento',
-    formPromoMessage: 'Vagas limitadas! Garante já 1 meses de clientes grátis antes do lançamento!',
+    formPromoMessage: 'Vagas limitadas! Garante já 1 mes de clientes grátuitamente antes do lançamento!',
     
     formNameLabel: 'Nome Completo',
     formNamePlaceholder: 'Digite o seu nome completo',
