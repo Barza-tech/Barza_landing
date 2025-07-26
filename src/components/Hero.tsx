@@ -158,7 +158,6 @@ const Hero: React.FC = () => {
                   
                   {/* iPhone Label */}
                   <div className="absolute -bottom-5 sm:-bottom-6 lg:-bottom-8 left-1/2 transform -translate-x-1/2 bg-white px-2 sm:px-2 lg:px-3 py-0.5 sm:py-1 rounded-full shadow-lg">
-                    <span className="text-xs font-medium text-gray-600">iPhone 16</span>
                   </div>
                 </div>
 
@@ -204,7 +203,7 @@ const Hero: React.FC = () => {
                   
                   {/* Samsung Label */}
                   <div className="absolute -bottom-5 sm:-bottom-6 lg:-bottom-8 left-1/2 transform -translate-x-1/2 bg-white px-2 sm:px-2 lg:px-3 py-0.5 sm:py-1 rounded-full shadow-lg">
-                    <span className="text-xs font-medium text-gray-600">Galaxy S24 Ultra</span>
+             
                   </div>
                 </div>
                 

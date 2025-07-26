@@ -45,7 +45,7 @@ const translations = {
     downloadDescription: 'Junte-se a milhares de usuários que já descobriram a conveniência do Barza',
     
     // Footer
-    madeWith: 'Feito com',
+    madeWith: 'Feito ',
     inAfrica: 'com Paixão',
     forTheWorld: 'para o Mundo',
     
@@ -58,7 +58,7 @@ const translations = {
     formTitle: 'Junte-se à Revolução Barza',
     formSubtitle: 'Registo de Barbeiro',
     formPromoLabel: 'Oferta de Lançamento',
-    formPromoMessage: 'Vagas limitadas! Garante já 1 mes de clientes grátuitamente antes do lançamento!',
+    formPromoMessage: 'Vagas limitadas! Garante já 1 mês de clientes gratuitamente antes do lançamento!',
     
     formNameLabel: 'Nome Completo',
     formNamePlaceholder: 'Digite o seu nome completo',
