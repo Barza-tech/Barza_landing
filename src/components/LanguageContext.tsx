@@ -17,9 +17,10 @@ const translations = {
     about: 'Sobre',
     
     // Hero Section
-    heroTitle: 'Encontre o Barbeiro Perfeito',
-    heroSubtitle: 'Conectando culturas de barbearia',
-    heroDescription: 'Descubra barbeiros móveis talentosos na sua área. Experiência profissional, conveniência moderna.',
+    heroTitle: "Beleza e Estilo, Onde e Quando Quiser"
+    ,
+    heroSubtitle: 'Conectando profissionais de beleza ',
+    heroDescription: 'Descubra profissionais de beleza móveis talentosos na sua área. Experiência profissional, conveniência moderna.',
     getStarted: 'Começar Agora',
     watchDemo: 'Ver Demonstração',
     
@@ -85,7 +86,7 @@ const translations = {
     about: 'About',
     
     // Hero Section
-    heroTitle: 'Find Your Perfect Barber',
+    heroTitle: 'Beauty and Style, Anytime, Anywhere',
     heroSubtitle: 'Connecting barbering cultures',
     heroDescription: 'Discover talented mobile barbers in your area. Professional expertise, modern convenience.',
     getStarted: 'Get Started',
@@ -153,7 +154,7 @@ const translations = {
     about: 'À Propos',
     
     // Hero Section
-    heroTitle: 'Trouvez Votre Barbier Parfait',
+    heroTitle: 'Beauté et Style, Où et Quand Vous Voulez',
     heroSubtitle: 'Connecter les cultures de barbier',
     heroDescription: 'Découvrez des barbiers mobiles talentueux dans votre région. Expertise professionnelle, commodité moderne.',
     getStarted: 'Commencer',

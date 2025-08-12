@@ -175,7 +175,7 @@ const Hero: React.FC = () => {
                         </div>
                         <h2 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">Barza</h2>
                         <p className="text-orange-100 mb-4 sm:mb-6 lg:mb-8 text-xs sm:text-xs lg:text-sm px-1 sm:px-2 leading-tight">
-                          Find your perfect barber nearby
+                          Beauty and Style, Anytime, Anywhere
                         </p>
                         
                         <div className="space-y-1.5 sm:space-y-2 lg:space-y-3 mb-4 sm:mb-6 lg:mb-8">
