@@ -3,7 +3,6 @@ import { LanguageProvider } from './components/LanguageContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import BarberForm from './components/BarberForm';
 import AppStore from './components/AppStore';
 import Footer from './components/Footer';
 
@@ -14,7 +13,6 @@ function App() {
         <Header />
         <Hero />
         <Features />
-        <BarberForm />
         <AppStore />
         <Footer />
       </div>
