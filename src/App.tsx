@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import AppStore from './components/AppStore';
 import Footer from './components/Footer';
+import GroupDiscountPromo from './components/groupDescontPromo';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="min-h-screen bg-white">
         <Header />
         <Hero />
+        <GroupDiscountPromo />
         <Features />
         <AppStore />
         <Footer />

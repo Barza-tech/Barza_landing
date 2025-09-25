@@ -26,9 +26,9 @@ const translations = {
     
     // Features
     featuresTitle: 'Porque Escolher Barza?',
-    featuresSubtitle: 'Conectamos você aos melhores barbeiros',
+    featuresSubtitle: 'Conectamos você aos melhores profissionais',
     
-    feature1Title: 'Barbeiros Móveis',
+    feature1Title: 'Profissionais Móveis',
     feature1Description: 'Profissionais qualificados vêm até você, onde quer que esteja',
     
     feature2Title: 'Notificações Inteligentes',
@@ -38,12 +38,12 @@ const translations = {
     feature3Description: 'Experimente qualidade profissional com toque moderno',
     
     feature4Title: 'Reserva Fácil',
-    feature4Description: 'Agende seu corte em poucos toques, pagamento seguro',
+    feature4Description: 'Agende seu tratamento de beleza em poucos toques',
     
     // App Store Section
     downloadTitle: 'Baixe o Barza Hoje',
     downloadSubtitle: 'Disponível para iOS e Android',
-    downloadDescription: 'Junte-se a milhares de usuários que já descobriram a conveniência do Barza',
+    downloadDescription: 'Junte-se a nós e descobra a conveniência da Barza',
     
     // Footer
     madeWith: 'Feito ',
