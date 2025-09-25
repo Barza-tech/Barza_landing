@@ -1,7 +1,18 @@
 import React from "react"
-import { Users,  Gift, } from "lucide-react"
+import { Users, Gift } from "lucide-react"
+import { useLanguage } from "./LanguageContext"
+
 
 const GroupDiscountPromo: React.FC = () => {
+  const { t } = useLanguage()
+
+  const steps = [
+    { people: 1, discount: t("promoStep1"), color: "from-gray-200 to-gray-300" },
+    { people: 2, discount: t("promoStep2"), color: "from-blue-400 to-blue-600" },
+    { people: 3, discount: t("promoStep3"), color: "from-green-400 to-green-600" },
+    { people: 4, discount: t("promoStep4"), color: "from-orange-400 to-orange-600" },
+  ]
+
   return (
     <section className="relative bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden">
       {/* Floating Background Elements */}
@@ -16,39 +27,31 @@ const GroupDiscountPromo: React.FC = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             <Gift className="w-4 h-4 mr-1.5" />
-            Promoção Exclusiva
+            {t("promoBadge")}
           </div>
 
           {/* Title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Desconto Progressivo em Grupo 🎉
+            {t("promoTitle")}
           </h2>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-10 leading-relaxed max-w-2xl mx-auto">
-            Quanto mais amigos traz, menos paga!  
-            Até <span className="font-semibold text-orange-600">10% OFF</span> em reservas de 4 pessoas no total.
+            {t("promoSubtitle")}
           </p>
 
           {/* Discount Steps */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-12">
-            {[
-              { people: 1, discount: "Preço normal", color: "from-gray-200 to-gray-300" },
-              { people: 2, discount: "-5%", color: "from-blue-400 to-blue-600" },
-              { people: 3, discount: "-7%", color: "from-green-400 to-green-600" },
-              { people: 4, discount: "-10%", color: "from-orange-400 to-orange-600" },
-            ].map((step, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center text-center"
-              >
+            {steps.map((step, idx) => (
+              <div key={idx} className="flex flex-col items-center text-center">
                 <div
                   className={`w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center shadow-lg mb-3 sm:mb-4`}
                 >
                   <Users className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
                 <p className="text-sm sm:text-base font-semibold text-gray-900">
-                  {step.people} Pessoa{step.people > 1 ? "s" : ""}
+                  {step.people}{" "}
+                  {step.people > 1 ? t("promoPeoplePlural") : t("promoPeople")}
                 </p>
                 <p className="text-xs sm:text-sm text-gray-500">{step.discount}</p>
               </div>
@@ -56,7 +59,7 @@ const GroupDiscountPromo: React.FC = () => {
           </div>
 
           {/* Call to Action */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             {/* App Store Button */}
             <button className="flex items-center bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               <div className="mr-4">
@@ -65,11 +68,11 @@ const GroupDiscountPromo: React.FC = () => {
                 </svg>
               </div>
               <div className="text-left">
-                <div className="text-xs text-gray-300">Download on the</div>
-                <div className="text-lg font-semibold">App Store</div>
+                <div className="text-xs text-gray-300">{t("appStoreTop")}</div>
+                <div className="text-lg font-semibold">{t("appStoreBottom")}</div>
               </div>
             </button>
-            
+
             {/* Google Play Button */}
             <button className="flex items-center bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               <div className="mr-4">
@@ -78,12 +81,11 @@ const GroupDiscountPromo: React.FC = () => {
                 </svg>
               </div>
               <div className="text-left">
-                <div className="text-xs text-gray-300">Get it on</div>
-                <div className="text-lg font-semibold">Google Play</div>
+                <div className="text-xs text-gray-300">{t("playStoreTop")}</div>
+                <div className="text-lg font-semibold">{t("playStoreBottom")}</div>
               </div>
             </button>
           </div>
-
         </div>
       </div>
 

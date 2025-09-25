@@ -76,7 +76,20 @@ const translations = {
     
     formSuccessTitle: 'Inscrição Enviada!',
     formSuccessMessage: 'Obrigado por se juntar à Barza. Entraremos em contacto em breve.',
-    formSuccessDetails: 'Verifique o seu email para mais informações sobre os próximos passos.'
+    formSuccessDetails: 'Verifique o seu email para mais informações sobre os próximos passos.',
+  promoBadge: "Promoção Exclusiva",
+  promoTitle: "Desconto Progressivo em Grupo 🎉",
+  promoSubtitle: "Quanto mais amigos traz, menos paga! Até 10% OFF em reservas de 4 pessoas no total.",
+  promoStep1: "Preço normal",
+  promoStep2: "-5%",
+  promoStep3: "-7%",
+  promoStep4: "-10%",
+  promoPeople: "Pessoa",
+  promoPeoplePlural: "Pessoas",
+  appStoreTop: "Descarregar na",
+  appStoreBottom: "App Store",
+  playStoreTop: "Obter no",
+  playStoreBottom: "Google Play",
   },
   
   en: {
@@ -144,7 +157,20 @@ const translations = {
     
     formSuccessTitle: 'Registration Sent!',
     formSuccessMessage: 'Thank you for joining Barza. We will contact you soon.',
-    formSuccessDetails: 'Check your email for more information about the next steps.'
+    formSuccessDetails: 'Check your email for more information about the next steps.',
+     promoBadge: "Exclusive Promotion",
+  promoTitle: "Group Progressive Discount 🎉",
+  promoSubtitle: "The more friends you bring, the less you pay! Up to 10% OFF for group bookings of 4 people.",
+  promoStep1: "Normal Price",
+  promoStep2: "-5%",
+  promoStep3: "-7%",
+  promoStep4: "-10%",
+  promoPeople: "Person",
+  promoPeoplePlural: "People",
+  appStoreTop: "Download on the",
+  appStoreBottom: "App Store",
+  playStoreTop: "Get it on",
+  playStoreBottom: "Google Play",
   },
   
   fr: {
@@ -212,7 +238,20 @@ const translations = {
     
     formSuccessTitle: 'Inscription Envoyée!',
     formSuccessMessage: 'Merci de rejoindre Barza. Nous vous contactons bientôt.',
-    formSuccessDetails: 'Vérifiez votre email pour plus d\'informations sur les prochaines étapes.'
+    formSuccessDetails: 'Vérifiez votre email pour plus d\'informations sur les prochaines étapes.',
+      promoBadge: "Promotion Exclusive",
+  promoTitle: "Réduction Progressive en Groupe 🎉",
+  promoSubtitle: "Plus vous amenez d'amis, moins vous payez ! Jusqu'à 10% OFF pour les réservations de 4 personnes.",
+  promoStep1: "Prix normal",
+  promoStep2: "-5%",
+  promoStep3: "-7%",
+  promoStep4: "-10%",
+  promoPeople: "Personne",
+  promoPeoplePlural: "Personnes",
+  appStoreTop: "Télécharger sur",
+  appStoreBottom: "App Store",
+  playStoreTop: "Disponible sur",
+  playStoreBottom: "Google Play",
   }
 };
 
