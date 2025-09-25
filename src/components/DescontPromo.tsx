@@ -1,5 +1,5 @@
 import React from "react"
-import { Users, Percent, Gift, ArrowRight } from "lucide-react"
+import { Users,  Gift, } from "lucide-react"
 
 const GroupDiscountPromo: React.FC = () => {
   return (
