@@ -1,25 +1,20 @@
-import React from 'react';
-import { LanguageProvider } from './components/LanguageContext';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import AppStore from './components/AppStore';
-import Footer from './components/Footer';
-import GroupDiscountPromo from './components/DescontPromo';
-
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "./components/LanguageContext";
+import Home from "./pages/Home";
+import Privacy from "./components/Privacy";
+import Terms from "./components/Terms";
 
 function App() {
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <Hero />
-        <GroupDiscountPromo/>
-        <Features />
-        <AppStore />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+        </Routes>
+      </BrowserRouter>
     </LanguageProvider>
   );
 }

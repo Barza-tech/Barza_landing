@@ -1,6 +1,7 @@
 import React from 'react';
 import { Scissors, Heart } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -16,7 +17,7 @@ const Footer: React.FC = () => {
             </div>
             <span className="text-3xl font-bold">Barza</span>
           </div>
-          
+
           {/* Tagline */}
           <div className="flex items-center justify-center space-x-2 text-gray-300 mb-8">
             <span>{t('madeWith')}</span>
@@ -24,7 +25,7 @@ const Footer: React.FC = () => {
             <span>{t('inAfrica')}</span>
             <span className="text-orange-400">{t('forTheWorld')}</span>
           </div>
-          
+
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-8 mb-8 text-gray-400">
             <a href="#features" className="hover:text-white transition-colors">
@@ -33,14 +34,19 @@ const Footer: React.FC = () => {
             <a href="#download" className="hover:text-white transition-colors">
               {t('download')}
             </a>
-            <a href="#privacy" className="hover:text-white transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#terms" className="hover:text-white transition-colors">
-              Terms of Service
-            </a>
+            
+            {/* Links externos para páginas */}
+           
+<Link to="/privacy" className="hover:text-white transition-colors">
+  Privacy Policy
+</Link>
+<Link to="/terms" className="hover:text-white transition-colors">
+  Terms of Service
+</Link>
+
+           
           </div>
-          
+
           {/* Copyright */}
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-400">
