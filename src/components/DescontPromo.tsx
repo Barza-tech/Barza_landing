@@ -58,32 +58,31 @@ const GroupDiscountPromo: React.FC = () => {
 
           {/* Call to Action */}
           {/* Call to Action */}
-<div className="flex flex-row gap-4 justify-center">
-  {/* Botão App Store (Disponível) */}
-  <a
-    href="https://apps.apple.com/app/barza/id6752736891"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transform hover:-translate-y-1 transition-all duration-300"
-  >
-    <img
-      src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-      alt="Download on the App Store"
-      className="h-12"
-    />
-  </a>
+          <div className="flex flex-row gap-4 justify-center">
+            {/* Botão App Store (Disponível) */}
+            <a
+              href="https://apps.apple.com/app/barza/id6752736891"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+                className="h-12"
+              />
+            </a>
 
-  {/* Botão Google Play (Em breve) */}
-  <div className="opacity-60 cursor-not-allowed">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-      alt="Get it on Google Play (Em breve)"
-      className="h-12 grayscale"
-      title="Brevemente na Google Play"
-    />
-  </div>
-</div>
-
+            {/* Botão Google Play (Em breve) */}
+            <div className="opacity-60 cursor-not-allowed">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play (Em breve)"
+                className="h-12 grayscale"
+                title="Brevemente na Google Play"
+              />
+            </div>
+          </div>
         </div>
       </div>
 

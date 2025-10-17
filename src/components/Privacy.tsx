@@ -34,7 +34,7 @@ const PrivacyScreen: React.FC = () => {
           1. Informações que Recolhemos e Porque
         </h3>
 
-        <h4 className="text-base font-semibold text-gray-900 mt-4 mb-2">🔹 Dados de Cadastro</h4>
+        <h4 className="text-base font-semibold text-gray-900 mt-4 mb-2">🔹 Dados de Cadastros</h4>
         <p className="text-gray-700 mb-2">
           • Nome, e-mail, telefone e palavra-passe (encriptada).
         </p>
