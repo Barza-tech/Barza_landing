@@ -71,17 +71,12 @@ const AppStore: React.FC = () => {
           </div>
 
           {/* QR Code Alternative */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
-  <p className="text-gray-500 mb-4">Ou digitalize o QR Code para descarregar</p>
-  <div className="w-32 h-32 bg-white border-2 border-gray-200 rounded-xl mx-auto flex items-center justify-center">
-    <img
-      src="/apple.png"
-      alt="QR Code Barza"
-      className="w-28 h-28 object-contain"
-    />
-  </div>
-</div>
-
+          <div className="mt-12 pt-8 border-t border-gray-200">
+            <p className="text-gray-500 mb-4">Ou digitalize o QR Code para descarregar</p>
+            <div className="w-32 h-32 bg-white border-2 border-gray-200 rounded-xl mx-auto flex items-center justify-center">
+              <img src="/apple.png" alt="QR Code Barza" className="w-28 h-28 object-contain" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
