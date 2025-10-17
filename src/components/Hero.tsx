@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             stroke="rgba(59, 130, 246, 0.3)"
             strokeWidth="2"
           />
-          
+
           {/* Gradient definition */}
           <defs>
             <linearGradient id="worldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             </linearGradient>
           </defs>
         </svg>
-        
+
         {/* Barber Location Pins */}
         {barberLocations.map((location) => (
           <div
@@ -55,19 +55,23 @@ const Hero: React.FC = () => {
           >
             <div className={`relative ${location.active ? 'animate-bounce' : ''}`}>
               {/* Pin */}
-              <div className={`w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full flex items-center justify-center shadow-lg ${
-                location.active 
-                  ? 'bg-gradient-to-r from-orange-400 to-orange-600' 
-                  : 'bg-gradient-to-r from-gray-400 to-gray-600'
-              }`}>
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 lg:w-3 lg:h-3 text-white text-xs">✂</div>
+              <div
+                className={`w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full flex items-center justify-center shadow-lg ${
+                  location.active
+                    ? 'bg-gradient-to-r from-orange-400 to-orange-600'
+                    : 'bg-gradient-to-r from-gray-400 to-gray-600'
+                }`}
+              >
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 lg:w-3 lg:h-3 text-white text-xs">
+                  ✂
+                </div>
               </div>
-              
+
               {/* Ripple effect for active locations */}
               {location.active && (
                 <div className="absolute inset-0 rounded-full bg-orange-400 animate-ping opacity-30"></div>
               )}
-              
+
               {/* Tooltip */}
               <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300 z-10">
                 <div className="bg-white px-2 py-1 rounded-lg shadow-lg text-xs font-medium text-gray-800 whitespace-nowrap">
@@ -78,27 +82,28 @@ const Hero: React.FC = () => {
             </div>
           </div>
         ))}
-        
+
         {/* Connection Lines */}
         <svg className="absolute inset-0 w-full h-full pointer-events-none">
           {barberLocations
-            .filter(loc => loc.active)
-            .map((location, index, activeLocations) => 
-              activeLocations.slice(index + 1).map((nextLocation, nextIndex) => (
-                <line
-                  key={`${location.id}-${nextLocation.id}`}
-                  x1={`${parseFloat(location.x)}`}
-                  y1={`${parseFloat(location.y)}`}
-                  x2={`${parseFloat(nextLocation.x)}`}
-                  y2={`${parseFloat(nextLocation.y)}`}
-                  stroke="rgba(249, 115, 22, 0.2)"
-                  strokeWidth="1"
-                  strokeDasharray="5,5"
-                  className="animate-pulse"
-                />
-              ))
-            )
-          }
+            .filter((loc) => loc.active)
+            .map((location, index, activeLocations) =>
+              activeLocations
+                .slice(index + 1)
+                .map((nextLocation, nextIndex) => (
+                  <line
+                    key={`${location.id}-${nextLocation.id}`}
+                    x1={`${parseFloat(location.x)}`}
+                    y1={`${parseFloat(location.y)}`}
+                    x2={`${parseFloat(nextLocation.x)}`}
+                    y2={`${parseFloat(nextLocation.y)}`}
+                    stroke="rgba(249, 115, 22, 0.2)"
+                    strokeWidth="1"
+                    strokeDasharray="5,5"
+                    className="animate-pulse"
+                  />
+                ))
+            )}
         </svg>
       </div>
 
@@ -108,11 +113,10 @@ const Hero: React.FC = () => {
         <div className="absolute top-20 right-10 sm:top-40 sm:right-20 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-blue-400/20 rounded-full animate-float-delayed"></div>
         <div className="absolute bottom-10 left-1/4 sm:bottom-20 sm:left-1/3 w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-green-400/20 rounded-full animate-float"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-8rem)] sm:min-h-[calc(100vh-10rem)] lg:min-h-[calc(100vh-12rem)]">
-            
             {/* Phone Mockups - Mobile First */}
             <div className="flex justify-center lg:justify-end order-1 lg:order-2 w-full">
               <div className="relative flex items-center justify-center space-x-2 sm:space-x-4 md:space-x-6">
@@ -121,44 +125,51 @@ const Hero: React.FC = () => {
                   <div className="w-48 h-96 sm:w-56 sm:h-[450px] md:w-64 md:h-[520px] lg:w-72 lg:h-[580px] bg-gray-900 rounded-[2rem] sm:rounded-[2.5rem] lg:rounded-[3rem] p-1.5 sm:p-2 shadow-2xl">
                     {/* Dynamic Island */}
                     <div className="absolute top-2.5 sm:top-3 lg:top-4 left-1/2 transform -translate-x-1/2 w-16 h-4 sm:w-20 sm:h-5 lg:w-24 lg:h-6 bg-black rounded-full z-10"></div>
-                    
+
                     <div className="w-full h-full bg-gradient-to-b from-blue-600 to-blue-800 rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[2.5rem] relative overflow-hidden">
                       {/* iPhone Content */}
                       <div className="p-3 sm:p-4 lg:p-6 text-center text-white pt-8 sm:pt-10 lg:pt-12">
                         <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 bg-orange-500 rounded-lg sm:rounded-xl lg:rounded-2xl flex items-center justify-center mx-auto mb-2 sm:mb-3 lg:mb-4">
-                          <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 text-white text-xs sm:text-sm lg:text-base">✂</div>
+                          <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 text-white text-xs sm:text-sm lg:text-base">
+                            ✂
+                          </div>
                         </div>
-                        <h2 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">Barza</h2>
+                        <h2 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">
+                          Barza
+                        </h2>
                         <p className="text-blue-100 mb-4 sm:mb-6 lg:mb-8 text-xs sm:text-xs lg:text-sm px-1 sm:px-2 leading-tight">
-                          Encontre o barbeiro perfeito perto de si
+                          Encontre o profissional perfeito perto de si
                         </p>
-                        
+
                         <div className="space-y-1.5 sm:space-y-2 lg:space-y-3 mb-4 sm:mb-6 lg:mb-8">
                           <div className="bg-blue-700/50 rounded-md sm:rounded-lg lg:rounded-xl p-1.5 sm:p-2 lg:p-3 flex items-center">
                             <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 bg-orange-400 rounded sm:rounded-md lg:rounded-lg mr-1.5 sm:mr-2 lg:mr-3 flex items-center justify-center text-xs">
                               📍
                             </div>
-                            <span className="text-blue-100 text-xs sm:text-xs lg:text-sm">Barbeiros móveis</span>
+                            <span className="text-blue-100 text-xs sm:text-xs lg:text-sm">
+                              Profissionais móveis
+                            </span>
                           </div>
-                          
+
                           <div className="bg-blue-700/50 rounded-md sm:rounded-lg lg:rounded-xl p-1.5 sm:p-2 lg:p-3 flex items-center">
                             <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 bg-orange-400 rounded sm:rounded-md lg:rounded-lg mr-1.5 sm:mr-2 lg:mr-3 flex items-center justify-center text-xs">
                               🔔
                             </div>
-                            <span className="text-blue-100 text-xs sm:text-xs lg:text-sm">Notificações</span>
+                            <span className="text-blue-100 text-xs sm:text-xs lg:text-sm">
+                              Notificações
+                            </span>
                           </div>
                         </div>
-                        
+
                         <button className="w-full bg-orange-500 text-white py-2 sm:py-2.5 lg:py-3 rounded-md sm:rounded-lg lg:rounded-xl font-semibold text-xs sm:text-sm lg:text-base">
                           Começar
                         </button>
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* iPhone Label */}
-                  <div className="absolute -bottom-5 sm:-bottom-6 lg:-bottom-8 left-1/2 transform -translate-x-1/2 bg-white px-2 sm:px-2 lg:px-3 py-0.5 sm:py-1 rounded-full shadow-lg">
-                  </div>
+                  <div className="absolute -bottom-5 sm:-bottom-6 lg:-bottom-8 left-1/2 transform -translate-x-1/2 bg-white px-2 sm:px-2 lg:px-3 py-0.5 sm:py-1 rounded-full shadow-lg"></div>
                 </div>
 
                 {/* Samsung Galaxy S24 Ultra */}
@@ -166,47 +177,53 @@ const Hero: React.FC = () => {
                   <div className="w-48 h-96 sm:w-56 sm:h-[450px] md:w-64 md:h-[520px] lg:w-72 lg:h-[580px] bg-gray-800 rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[2.5rem] p-1.5 sm:p-2 shadow-2xl">
                     {/* Samsung Punch Hole */}
                     <div className="absolute top-3 sm:top-4 lg:top-6 left-1/2 transform -translate-x-1/2 w-2 h-2 sm:w-2.5 sm:h-2.5 lg:w-3 lg:h-3 bg-black rounded-full z-10"></div>
-                    
+
                     <div className="w-full h-full bg-gradient-to-b from-orange-500 to-orange-700 rounded-[1rem] sm:rounded-[1.5rem] lg:rounded-[2rem] relative overflow-hidden">
                       {/* Samsung Content */}
                       <div className="p-3 sm:p-4 lg:p-6 text-center text-white pt-8 sm:pt-10 lg:pt-12">
                         <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14 bg-blue-600 rounded-lg sm:rounded-xl lg:rounded-2xl flex items-center justify-center mx-auto mb-2 sm:mb-3 lg:mb-4">
-                          <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 text-white text-xs sm:text-sm lg:text-base">✂</div>
+                          <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 text-white text-xs sm:text-sm lg:text-base">
+                            ✂
+                          </div>
                         </div>
-                        <h2 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">Barza</h2>
+                        <h2 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 lg:mb-3">
+                          Barza
+                        </h2>
                         <p className="text-orange-100 mb-4 sm:mb-6 lg:mb-8 text-xs sm:text-xs lg:text-sm px-1 sm:px-2 leading-tight">
                           Beauty and Style, Anytime, Anywhere
                         </p>
-                        
+
                         <div className="space-y-1.5 sm:space-y-2 lg:space-y-3 mb-4 sm:mb-6 lg:mb-8">
                           <div className="bg-orange-600/50 rounded-md sm:rounded-lg lg:rounded-xl p-1.5 sm:p-2 lg:p-3 flex items-center">
                             <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 bg-blue-500 rounded sm:rounded-md lg:rounded-lg mr-1.5 sm:mr-2 lg:mr-3 flex items-center justify-center text-xs">
                               📱
                             </div>
-                            <span className="text-orange-100 text-xs sm:text-xs lg:text-sm">Mobile barbers</span>
+                            <span className="text-orange-100 text-xs sm:text-xs lg:text-sm">
+                              Mobile Professionals
+                            </span>
                           </div>
-                          
+
                           <div className="bg-orange-600/50 rounded-md sm:rounded-lg lg:rounded-xl p-1.5 sm:p-2 lg:p-3 flex items-center">
                             <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 bg-blue-500 rounded sm:rounded-md lg:rounded-lg mr-1.5 sm:mr-2 lg:mr-3 flex items-center justify-center text-xs">
                               ⭐
                             </div>
-                            <span className="text-orange-100 text-xs sm:text-xs lg:text-sm">Quality service</span>
+                            <span className="text-orange-100 text-xs sm:text-xs lg:text-sm">
+                              Quality service
+                            </span>
                           </div>
                         </div>
-                        
+
                         <button className="w-full bg-blue-600 text-white py-2 sm:py-2.5 lg:py-3 rounded-md sm:rounded-lg lg:rounded-xl font-semibold text-xs sm:text-sm lg:text-base">
                           Get Started
                         </button>
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Samsung Label */}
-                  <div className="absolute -bottom-5 sm:-bottom-6 lg:-bottom-8 left-1/2 transform -translate-x-1/2 bg-white px-2 sm:px-2 lg:px-3 py-0.5 sm:py-1 rounded-full shadow-lg">
-             
-                  </div>
+                  <div className="absolute -bottom-5 sm:-bottom-6 lg:-bottom-8 left-1/2 transform -translate-x-1/2 bg-white px-2 sm:px-2 lg:px-3 py-0.5 sm:py-1 rounded-full shadow-lg"></div>
                 </div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute -top-1 sm:-top-2 lg:-top-4 -right-1 sm:-right-2 lg:-right-4 w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 bg-orange-400 rounded-md sm:rounded-lg lg:rounded-xl flex items-center justify-center shadow-lg animate-bounce text-xs sm:text-sm lg:text-base">
                   ✂
@@ -226,25 +243,38 @@ const Hero: React.FC = () => {
                 <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
                 {t('heroSubtitle')}
               </div>
-              
+
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
                 {t('heroTitle')}
               </h1>
-              
+
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                 {t('heroDescription')}
               </p>
-              
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-                <button className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base">
-                  {t('getStarted')}
-                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-                </button>
-                
-                <button className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 text-sm sm:text-base">
-                  <Play className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                  {t('watchDemo')}
-                </button>
+                {/* Botão App Store (Disponível) */}
+                <a
+                  href="https://apps.apple.com/app/barza/id6752736891"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transform hover:-translate-y-1 transition-all duration-300"
+                >
+                  <img
+                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="Download on the App Store"
+                    className="h-12"
+                  />
+                </a>
+
+                {/* Botão Google Play (Em breve) */}
+                <div className="opacity-60 cursor-not-allowed">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Get it on Google Play (Em breve)"
+                    className="h-12 grayscale"
+                    title="Brevemente na Google Play"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -253,12 +283,22 @@ const Hero: React.FC = () => {
 
       <style jsx>{`
         @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
         }
         @keyframes float-delayed {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-15px); }
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-15px);
+          }
         }
         .animate-float {
           animation: float 6s ease-in-out infinite;
