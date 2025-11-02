@@ -1,9 +1,9 @@
 import React from "react";
 import { ArrowLeft } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useNavigate } from "react-router-dom"; // ✅ substitui useRouter do Next.js
 
 const PrivacyScreen: React.FC = () => {
-  const router = useRouter();
+  const navigate = useNavigate(); // ✅ inicializa o hook do React Router
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -11,7 +11,7 @@ const PrivacyScreen: React.FC = () => {
       <div className="bg-gradient-to-r from-blue-900 to-blue-500 text-white rounded-b-2xl shadow-lg">
         <div className="flex items-center px-6 pt-10 pb-6">
           <button
-            onClick={() => router.back()}
+            onClick={() => navigate(-1)} // ✅ equivalente ao router.back()
             className="mr-4 p-2 rounded-lg hover:bg-white/20 transition-colors"
           >
             <ArrowLeft size={24} />
@@ -28,7 +28,7 @@ const PrivacyScreen: React.FC = () => {
         <p className="text-gray-600 mb-4">Última atualização: [01/10/2025]</p>
 
         <p className="text-gray-700 mb-4">
-          A <span className="font-bold text-gray-900">Barza</span> valoriza a sua privacidade e compromete-se a proteger os dados pessoais dos seus utilizadores. 
+          A <span className="font-bold text-gray-900">Barza</span> valoriza a sua privacidade e compromete-se a proteger os dados pessoais dos seus utilizadores.
           Explicamos de forma clara quais os dados que recolhemos, porque os recolhemos e como os utilizamos, seguindo as exigências da App Store.
         </p>
 
@@ -42,7 +42,7 @@ const PrivacyScreen: React.FC = () => {
           • Nome, e-mail, telefone e palavra-passe (encriptada).
         </p>
         <p className="text-gray-500 italic mb-4">
-          👉 Porque: para criar e autenticar a conta, permitir login seguro e contacto básico.  
+          👉 Porque: para criar e autenticar a conta, permitir login seguro e contacto básico.
           Exemplo: usamos o seu e-mail para recuperar a conta caso esqueça a palavra-passe.
         </p>
 
@@ -51,7 +51,7 @@ const PrivacyScreen: React.FC = () => {
           • Foto de perfil, idioma preferido, descrição de serviços, localização fixa ou área de atuação.
         </p>
         <p className="text-gray-500 italic mb-4">
-          👉 Porque: para mostrar o seu perfil a outros utilizadores de forma completa e relevante.  
+          👉 Porque: para mostrar o seu perfil a outros utilizadores de forma completa e relevante.
           Exemplo: um barbeiro pode adicionar “Especialista em cortes clássicos” e definir que atende apenas no centro da cidade.
         </p>
 
@@ -60,7 +60,7 @@ const PrivacyScreen: React.FC = () => {
           • Histórico de agendamentos, serviços escolhidos, interações no app.
         </p>
         <p className="text-gray-500 italic mb-4">
-          👉 Porque: para melhorar a experiência, permitir repetir serviços e enviar notificações úteis.  
+          👉 Porque: para melhorar a experiência, permitir repetir serviços e enviar notificações úteis.
           Exemplo: guardamos o histórico para recomendar serviços semelhantes que já utilizou.
         </p>
 
@@ -69,7 +69,7 @@ const PrivacyScreen: React.FC = () => {
           • Localização em tempo real (quando autorizado pelo utilizador).
         </p>
         <p className="text-gray-500 italic mb-4">
-          👉 Porque: para recomendar profissionais próximos e calcular rotas.  
+          👉 Porque: para recomendar profissionais próximos e calcular rotas.
           Exemplo: ao pedir um barbeiro em casa, mostramos apenas profissionais disponíveis na sua zona.
         </p>
 
@@ -78,7 +78,7 @@ const PrivacyScreen: React.FC = () => {
           • Modelo do dispositivo, sistema operativo, endereço IP e dados de navegação.
         </p>
         <p className="text-gray-500 italic mb-4">
-          👉 Porque: para garantir compatibilidade técnica e segurança do app.  
+          👉 Porque: para garantir compatibilidade técnica e segurança do app.
           Exemplo: registamos que usa Android 14 para resolver erros específicos dessa versão.
         </p>
 
@@ -132,17 +132,16 @@ const PrivacyScreen: React.FC = () => {
           Exemplo: pode pedir a eliminação da sua conta e todos os dados associados serão removidos dos nossos sistemas.
         </p>
 
-        {/* 🔸 Informação adicionada sobre eliminação de conta na app Barza */}
+        {/* 🔸 Informação sobre eliminação de conta */}
         <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4 rounded-lg">
           <h4 className="text-base font-semibold text-blue-900 mb-2">🧾 Eliminação da Conta na App Barza</h4>
           <p className="text-gray-700 mb-2">
-            O utilizador pode eliminar a sua conta diretamente através da aplicação Barza. 
+            O utilizador pode eliminar a sua conta diretamente através da aplicação Barza.
             Basta aceder ao menu <span className="font-semibold text-gray-900">Perfil</span> →{" "}
             <span className="font-semibold text-gray-900">Eliminar Conta</span>.
           </p>
           <p className="text-gray-700 mb-2">
-            Após a eliminação, todos os dados pessoais e informações associadas ao perfil são removidos 
-            permanentemente dos nossos sistemas.
+            Após a eliminação, todos os dados pessoais e informações associadas ao perfil são removidos permanentemente dos nossos sistemas.
           </p>
           <p className="text-gray-700">
             Caso tenha dificuldades em eliminar a conta, pode entrar em contacto com a nossa equipa através do e-mail{" "}
@@ -155,7 +154,7 @@ const PrivacyScreen: React.FC = () => {
         {/* Section 6 */}
         <h3 className="text-lg font-bold text-blue-900 mt-6 mb-2">6. Retenção de Dados</h3>
         <p className="text-gray-700 mb-2">
-          Mantemos os dados enquanto a conta estiver acactivativa. Após eliminação, dados são apagados ou anonimizados, salvo exigência legal.
+          Mantemos os dados enquanto a conta estiver ativa. Após eliminação, dados são apagados ou anonimizados, salvo exigência legal.
         </p>
         <p className="text-gray-500 italic mb-4">
           Exemplo: podemos guardar faturas por obrigações fiscais, mesmo após eliminar a conta.
@@ -178,9 +177,7 @@ const PrivacyScreen: React.FC = () => {
 
         {/* Section 9 */}
         <h3 className="text-lg font-bold text-blue-900 mt-6 mb-2">9. Contacto</h3>
-        <p className="text-gray-700 mb-10">
-          📧 gongamiguel@gmail.com
-        </p>
+        <p className="text-gray-700 mb-10">📧 gongamiguel@gmail.com</p>
       </div>
     </div>
   );
