@@ -155,7 +155,7 @@ const PrivacyScreen: React.FC = () => {
         {/* Section 6 */}
         <h3 className="text-lg font-bold text-blue-900 mt-6 mb-2">6. Retenção de Dados</h3>
         <p className="text-gray-700 mb-2">
-          Mantemos os dados enquanto a conta estiver ativa. Após eliminação, dados são apagados ou anonimizados, salvo exigência legal.
+          Mantemos os dados enquanto a conta estiver acactivativa. Após eliminação, dados são apagados ou anonimizados, salvo exigência legal.
         </p>
         <p className="text-gray-500 italic mb-4">
           Exemplo: podemos guardar faturas por obrigações fiscais, mesmo após eliminar a conta.
