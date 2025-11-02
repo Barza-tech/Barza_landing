@@ -1,7 +1,10 @@
 import React from "react";
 import { ArrowLeft } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const PrivacyScreen: React.FC = () => {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Gradient Header */}
@@ -129,6 +132,26 @@ const PrivacyScreen: React.FC = () => {
           Exemplo: pode pedir a eliminação da sua conta e todos os dados associados serão removidos dos nossos sistemas.
         </p>
 
+        {/* 🔸 Informação adicionada sobre eliminação de conta na app Barza */}
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4 rounded-lg">
+          <h4 className="text-base font-semibold text-blue-900 mb-2">🧾 Eliminação da Conta na App Barza</h4>
+          <p className="text-gray-700 mb-2">
+            O utilizador pode eliminar a sua conta diretamente através da aplicação Barza. 
+            Basta aceder ao menu <span className="font-semibold text-gray-900">Perfil</span> →{" "}
+            <span className="font-semibold text-gray-900">Eliminar Conta</span>.
+          </p>
+          <p className="text-gray-700 mb-2">
+            Após a eliminação, todos os dados pessoais e informações associadas ao perfil são removidos 
+            permanentemente dos nossos sistemas.
+          </p>
+          <p className="text-gray-700">
+            Caso tenha dificuldades em eliminar a conta, pode entrar em contacto com a nossa equipa através do e-mail{" "}
+            <a href="mailto:suporte@barza.app" className="text-blue-700 underline">
+              gongamiguel@gmail.com
+            </a>.
+          </p>
+        </div>
+
         {/* Section 6 */}
         <h3 className="text-lg font-bold text-blue-900 mt-6 mb-2">6. Retenção de Dados</h3>
         <p className="text-gray-700 mb-2">
@@ -155,7 +178,7 @@ const PrivacyScreen: React.FC = () => {
 
         {/* Section 9 */}
         <h3 className="text-lg font-bold text-blue-900 mt-6 mb-2">9. Contacto</h3>
-        <p className="text-gray-700 mb-2">
+        <p className="text-gray-700 mb-10">
           📧 gongamiguel@gmail.com
         </p>
       </div>
