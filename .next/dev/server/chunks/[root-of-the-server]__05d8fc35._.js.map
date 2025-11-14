@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/antoniomiguel/Documents/projectos/Barza_landing/app/api/products/route.ts"],"sourcesContent":["// app/api/products/route.ts\nimport { NextRequest, NextResponse } from \"next/server\";\nimport { createClient } from \"@supabase/supabase-js\";\n\n// O service_role key NUNCA vai para o cliente\nconst supabase = createClient(\n  process.env.NEXT_PUBLIC_SUPABASE_URL!, \n  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!\n);\n\nexport async function GET(req: NextRequest) {\n  const { data, error } = await supabase.from(\"products\").select(\"*\");\n\n  if (error) {\n    return NextResponse.json({ error: error.message }, { status: 500 });\n  }\n\n  return NextResponse.json(data);\n}\n"],"names":[],"mappings":"AAAA,4BAA4B;;;;;AAC5B;AACA;;;AAEA,8CAA8C;AAC9C,MAAM,WAAW,IAAA,8TAAY;AAKtB,eAAe,IAAI,GAAgB;IACxC,MAAM,EAAE,IAAI,EAAE,KAAK,EAAE,GAAG,MAAM,SAAS,IAAI,CAAC,YAAY,MAAM,CAAC;IAE/D,IAAI,OAAO;QACT,OAAO,4VAAY,CAAC,IAAI,CAAC;YAAE,OAAO,MAAM,OAAO;QAAC,GAAG;YAAE,QAAQ;QAAI;IACnE;IAEA,OAAO,4VAAY,CAAC,IAAI,CAAC;AAC3B"}}]
+}

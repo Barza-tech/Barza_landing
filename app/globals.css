@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personalizações */
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition;
+  }
+}

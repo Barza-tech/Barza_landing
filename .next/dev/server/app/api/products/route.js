@@ -1,0 +1,10 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/products/route.js")
+R.c("server/chunks/8db05_next_eca1fdcb._.js")
+R.c("server/chunks/66f00_@supabase_realtime-js_dist_module_7028b17a._.js")
+R.c("server/chunks/6ccb1_@supabase_storage-js_dist_module_409238f8._.js")
+R.c("server/chunks/54733_@supabase_auth-js_dist_module_b0fb94c0._.js")
+R.c("server/chunks/62e38__pnpm_7cf66389._.js")
+R.c("server/chunks/[root-of-the-server]__05d8fc35._.js")
+R.c("server/chunks/d70cf_Barza_landing__next-internal_server_app_api_products_route_actions_c04b4e2b.js")
+R.m("[project]/Documents/projectos/Barza_landing/node_modules/.pnpm/next@16.0.3_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/Documents/projectos/Barza_landing/app/api/products/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/Documents/projectos/Barza_landing/node_modules/.pnpm/next@16.0.3_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/Documents/projectos/Barza_landing/app/api/products/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports
